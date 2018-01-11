@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003C6AB51969E255450BB370 /* Pods_Hospital_Appointment_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A95282E6731FDBF4826332 /* Pods_Hospital_Appointment_System.framework */; };
+		8424402D2003B17A000E0C56 /* PatientWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424402C2003B17A000E0C56 /* PatientWelcomeVC.swift */; };
+		8433D8F520060C94008C90AC /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433D8F420060C94008C90AC /* Quiz.swift */; };
+		845BDE5B2004C29E00EFA2D6 /* AppointmentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BDE5A2004C29D00EFA2D6 /* AppointmentTVC.swift */; };
+		845BDE632005075C00EFA2D6 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BDE622005075C00EFA2D6 /* SurveyVC.swift */; };
+		845BDE652005105900EFA2D6 /* QuestionAnswerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BDE642005105900EFA2D6 /* QuestionAnswerTVC.swift */; };
+		84AEAA09200777F4008E6B50 /* NurseWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEAA08200777F3008E6B50 /* NurseWelcomeVC.swift */; };
+		84AEAA0B2007782C008E6B50 /* DoctorWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEAA0A2007782C008E6B50 /* DoctorWelcomeVC.swift */; };
+		84C4E6092000DC2F00E909D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E6082000DC2F00E909D9 /* AppDelegate.swift */; };
+		84C4E60B2000DC2F00E909D9 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E60A2000DC2F00E909D9 /* WelcomeVC.swift */; };
+		84C4E60E2000DC2F00E909D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C4E60C2000DC2F00E909D9 /* Main.storyboard */; };
+		84C4E6102000DC2F00E909D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C4E60F2000DC2F00E909D9 /* Assets.xcassets */; };
+		84C4E6132000DC2F00E909D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C4E6112000DC2F00E909D9 /* LaunchScreen.storyboard */; };
+		84C4E6202000E6FC00E909D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84C4E61F2000E6FC00E909D9 /* GoogleService-Info.plist */; };
+		84C4E6222001099300E909D9 /* CustomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E6212001099300E909D9 /* CustomizeButton.swift */; };
+		84C4E62420010BF800E909D9 /* CustomizeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E62320010BF800E909D9 /* CustomizeTextField.swift */; };
+		84C4E626200113D900E909D9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4E625200113D900E909D9 /* LoginVC.swift */; };
+		84EB934E20013FF20062384B /* SignupDoctorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB934D20013FF20062384B /* SignupDoctorVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A0A062F20ACD1E9C152C8FD /* Pods-Hospital Appointment System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital Appointment System.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital Appointment System/Pods-Hospital Appointment System.release.xcconfig"; sourceTree = "<group>"; };
+		8424402C2003B17A000E0C56 /* PatientWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientWelcomeVC.swift; sourceTree = "<group>"; };
+		8433D8F420060C94008C90AC /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		845BDE5A2004C29D00EFA2D6 /* AppointmentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTVC.swift; sourceTree = "<group>"; };
+		845BDE622005075C00EFA2D6 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
+		845BDE642005105900EFA2D6 /* QuestionAnswerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerTVC.swift; sourceTree = "<group>"; };
+		84AEAA08200777F3008E6B50 /* NurseWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseWelcomeVC.swift; sourceTree = "<group>"; };
+		84AEAA0A2007782C008E6B50 /* DoctorWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorWelcomeVC.swift; sourceTree = "<group>"; };
+		84C4E6052000DC2F00E909D9 /* Hospital Appointment System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hospital Appointment System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C4E6082000DC2F00E909D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C4E60A2000DC2F00E909D9 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		84C4E60D2000DC2F00E909D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C4E60F2000DC2F00E909D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C4E6122000DC2F00E909D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C4E6142000DC2F00E909D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C4E61F2000E6FC00E909D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84C4E6212001099300E909D9 /* CustomizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButton.swift; sourceTree = "<group>"; };
+		84C4E62320010BF800E909D9 /* CustomizeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeTextField.swift; sourceTree = "<group>"; };
+		84C4E625200113D900E909D9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		84EB934D20013FF20062384B /* SignupDoctorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDoctorVC.swift; sourceTree = "<group>"; };
+		B5842C553578104434401971 /* Pods-Hospital Appointment System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital Appointment System.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital Appointment System/Pods-Hospital Appointment System.debug.xcconfig"; sourceTree = "<group>"; };
+		D9A95282E6731FDBF4826332 /* Pods_Hospital_Appointment_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital_Appointment_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C4E6022000DC2F00E909D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003C6AB51969E255450BB370 /* Pods_Hospital_Appointment_System.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2041277BE38305531AA6C1F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5842C553578104434401971 /* Pods-Hospital Appointment System.debug.xcconfig */,
+				2A0A062F20ACD1E9C152C8FD /* Pods-Hospital Appointment System.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84C4E5FC2000DC2F00E909D9 = {
+			isa = PBXGroup;
+			children = (
+				84C4E6072000DC2F00E909D9 /* Hospital Appointment System */,
+				84C4E6062000DC2F00E909D9 /* Products */,
+				2041277BE38305531AA6C1F8 /* Pods */,
+				F9B2CA498C76AF080DCC8CC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84C4E6062000DC2F00E909D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C4E6052000DC2F00E909D9 /* Hospital Appointment System.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C4E6072000DC2F00E909D9 /* Hospital Appointment System */ = {
+			isa = PBXGroup;
+			children = (
+				84C4E61E2000E49900E909D9 /* Service */,
+				84C4E61D2000E48600E909D9 /* Extension */,
+				84C4E61C2000E46C00E909D9 /* Controller */,
+				84C4E61B2000E46200E909D9 /* View */,
+				84C4E61A2000E45400E909D9 /* Model */,
+				84C4E6082000DC2F00E909D9 /* AppDelegate.swift */,
+				84C4E60F2000DC2F00E909D9 /* Assets.xcassets */,
+				84C4E6112000DC2F00E909D9 /* LaunchScreen.storyboard */,
+				84C4E6142000DC2F00E909D9 /* Info.plist */,
+				84C4E61F2000E6FC00E909D9 /* GoogleService-Info.plist */,
+			);
+			path = "Hospital Appointment System";
+			sourceTree = "<group>";
+		};
+		84C4E61A2000E45400E909D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84C4E61B2000E46200E909D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C4E60C2000DC2F00E909D9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C4E61C2000E46C00E909D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84C4E60A2000DC2F00E909D9 /* WelcomeVC.swift */,
+				84C4E625200113D900E909D9 /* LoginVC.swift */,
+				84EB934D20013FF20062384B /* SignupDoctorVC.swift */,
+				8424402C2003B17A000E0C56 /* PatientWelcomeVC.swift */,
+				845BDE5A2004C29D00EFA2D6 /* AppointmentTVC.swift */,
+				845BDE622005075C00EFA2D6 /* SurveyVC.swift */,
+				845BDE642005105900EFA2D6 /* QuestionAnswerTVC.swift */,
+				8433D8F420060C94008C90AC /* Quiz.swift */,
+				84AEAA08200777F3008E6B50 /* NurseWelcomeVC.swift */,
+				84AEAA0A2007782C008E6B50 /* DoctorWelcomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84C4E61D2000E48600E909D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84C4E6212001099300E909D9 /* CustomizeButton.swift */,
+				84C4E62320010BF800E909D9 /* CustomizeTextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84C4E61E2000E49900E909D9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F9B2CA498C76AF080DCC8CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9A95282E6731FDBF4826332 /* Pods_Hospital_Appointment_System.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C4E6042000DC2F00E909D9 /* Hospital Appointment System */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C4E6172000DC2F00E909D9 /* Build configuration list for PBXNativeTarget "Hospital Appointment System" */;
+			buildPhases = (
+				84AA7F1601047A1C9B27134F /* [CP] Check Pods Manifest.lock */,
+				84C4E6012000DC2F00E909D9 /* Sources */,
+				84C4E6022000DC2F00E909D9 /* Frameworks */,
+				84C4E6032000DC2F00E909D9 /* Resources */,
+				2FDB54BD59F968096890B7FF /* [CP] Embed Pods Frameworks */,
+				697D5909D1C6DC4D1EADB420 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hospital Appointment System";
+			productName = "Hospital Appointment System";
+			productReference = 84C4E6052000DC2F00E909D9 /* Hospital Appointment System.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C4E5FD2000DC2F00E909D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = MuhammadAamir;
+				TargetAttributes = {
+					84C4E6042000DC2F00E909D9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84C4E6002000DC2F00E909D9 /* Build configuration list for PBXProject "Hospital Appointment System" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C4E5FC2000DC2F00E909D9;
+			productRefGroup = 84C4E6062000DC2F00E909D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C4E6042000DC2F00E909D9 /* Hospital Appointment System */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C4E6032000DC2F00E909D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C4E6132000DC2F00E909D9 /* LaunchScreen.storyboard in Resources */,
+				84C4E6202000E6FC00E909D9 /* GoogleService-Info.plist in Resources */,
+				84C4E6102000DC2F00E909D9 /* Assets.xcassets in Resources */,
+				84C4E60E2000DC2F00E909D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FDB54BD59F968096890B7FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hospital Appointment System/Pods-Hospital Appointment System-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hospital Appointment System/Pods-Hospital Appointment System-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		697D5909D1C6DC4D1EADB420 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hospital Appointment System/Pods-Hospital Appointment System-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84AA7F1601047A1C9B27134F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hospital Appointment System-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C4E6012000DC2F00E909D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C4E60B2000DC2F00E909D9 /* WelcomeVC.swift in Sources */,
+				84AEAA09200777F4008E6B50 /* NurseWelcomeVC.swift in Sources */,
+				845BDE5B2004C29E00EFA2D6 /* AppointmentTVC.swift in Sources */,
+				84C4E6092000DC2F00E909D9 /* AppDelegate.swift in Sources */,
+				84C4E6222001099300E909D9 /* CustomizeButton.swift in Sources */,
+				84AEAA0B2007782C008E6B50 /* DoctorWelcomeVC.swift in Sources */,
+				84C4E62420010BF800E909D9 /* CustomizeTextField.swift in Sources */,
+				845BDE632005075C00EFA2D6 /* SurveyVC.swift in Sources */,
+				8424402D2003B17A000E0C56 /* PatientWelcomeVC.swift in Sources */,
+				8433D8F520060C94008C90AC /* Quiz.swift in Sources */,
+				84C4E626200113D900E909D9 /* LoginVC.swift in Sources */,
+				84EB934E20013FF20062384B /* SignupDoctorVC.swift in Sources */,
+				845BDE652005105900EFA2D6 /* QuestionAnswerTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84C4E60C2000DC2F00E909D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C4E60D2000DC2F00E909D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C4E6112000DC2F00E909D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C4E6122000DC2F00E909D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C4E6152000DC2F00E909D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C4E6162000DC2F00E909D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C4E6182000DC2F00E909D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5842C553578104434401971 /* Pods-Hospital Appointment System.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = "Hospital Appointment System/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Hospital-Appointment-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84C4E6192000DC2F00E909D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0A062F20ACD1E9C152C8FD /* Pods-Hospital Appointment System.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = "Hospital Appointment System/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Hospital-Appointment-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C4E6002000DC2F00E909D9 /* Build configuration list for PBXProject "Hospital Appointment System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C4E6152000DC2F00E909D9 /* Debug */,
+				84C4E6162000DC2F00E909D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C4E6172000DC2F00E909D9 /* Build configuration list for PBXNativeTarget "Hospital Appointment System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C4E6182000DC2F00E909D9 /* Debug */,
+				84C4E6192000DC2F00E909D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C4E5FD2000DC2F00E909D9 /* Project object */;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MICBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="hw4-2o-dT2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHG-mT-Lrx">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MCILogo2" translatesAutoresizingMaskIntoConstraints="NO" id="rPG-Ef-heB">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="267"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rPG-Ef-heB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G28-9V-SQ4"/>
+                            <constraint firstItem="rPG-Ef-heB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="La1-hD-z2K"/>
+                            <constraint firstAttribute="bottom" secondItem="hw4-2o-dT2" secondAttribute="bottom" id="Oj6-fp-k7A"/>
+                            <constraint firstAttribute="trailing" secondItem="hw4-2o-dT2" secondAttribute="trailing" id="Pfn-4x-v5g"/>
+                            <constraint firstItem="hw4-2o-dT2" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="dzU-ZU-CIf"/>
+                            <constraint firstItem="rPG-Ef-heB" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.4" id="oAU-hY-Q8P"/>
+                            <constraint firstItem="hw4-2o-dT2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="p9w-yC-L6D"/>
+                            <constraint firstItem="rPG-Ef-heB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="qe9-QO-jsk"/>
+                            <constraint firstItem="UHG-mT-Lrx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="t5D-Tj-Zm8"/>
+                            <constraint firstAttribute="bottom" secondItem="UHG-mT-Lrx" secondAttribute="bottom" id="ua0-40-LOe"/>
+                            <constraint firstItem="UHG-mT-Lrx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xrV-p9-IzN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UHG-mT-Lrx" secondAttribute="trailing" id="zqG-ne-Ob6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MCILogo2" width="1936" height="485"/>
+        <image name="MICBackGround" width="2048" height="1488"/>
+    </resources>
+</document>

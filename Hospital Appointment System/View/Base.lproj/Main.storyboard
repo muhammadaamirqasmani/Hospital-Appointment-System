@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mitchell_cancer_institute" translatesAutoresizingMaskIntoConstraints="NO" id="7mI-9p-Izc">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aq-RX-Gbm">
+                                <rect key="frame" x="0.0" y="-0.5" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-NC-nJj" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="75" y="400" width="225" height="46.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SignUp">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3WH-tc-mO0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvP-SE-gsf" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="75" y="343.5" width="225" height="46.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LogIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cia-ak-QjV" kind="presentation" modalTransitionStyle="flipHorizontal" id="Shq-cb-mRS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QvP-SE-gsf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="6LN-Mv-mq9"/>
+                            <constraint firstItem="7mI-9p-Izc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HlJ-wW-XsC"/>
+                            <constraint firstItem="7mI-9p-Izc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Jo2-sw-Jh9"/>
+                            <constraint firstItem="QvP-SE-gsf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="KEj-Hu-fd4"/>
+                            <constraint firstItem="2aq-RX-Gbm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N6y-t6-c5z"/>
+                            <constraint firstItem="QvP-SE-gsf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NoD-5L-aRZ"/>
+                            <constraint firstItem="7mI-9p-Izc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Sh7-RI-3Wm"/>
+                            <constraint firstItem="2aq-RX-Gbm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="TtY-Hb-isM"/>
+                            <constraint firstItem="2aq-RX-Gbm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Uzu-KM-MU4"/>
+                            <constraint firstItem="2aq-RX-Gbm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YXx-32-Tlm"/>
+                            <constraint firstItem="QvP-SE-gsf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="Yqe-pq-sMt"/>
+                            <constraint firstItem="1YA-NC-nJj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="aKx-t9-ryf"/>
+                            <constraint firstItem="7mI-9p-Izc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="kqT-0T-BSn"/>
+                            <constraint firstItem="1YA-NC-nJj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lUU-CB-Gh1"/>
+                            <constraint firstItem="1YA-NC-nJj" firstAttribute="top" secondItem="QvP-SE-gsf" secondAttribute="bottom" constant="10" id="mQD-M1-his"/>
+                            <constraint firstItem="1YA-NC-nJj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="yJa-fK-boJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="U8j-Gz-xK9" kind="presentation" identifier="Doctor" modalTransitionStyle="flipHorizontal" id="eeq-le-Rv2"/>
+                        <segue destination="0sY-hA-cee" kind="presentation" identifier="PatientLogin" modalTransitionStyle="flipHorizontal" id="s3v-9x-ZJe"/>
+                        <segue destination="2Re-sX-O3E" kind="presentation" identifier="DoctorLogin" modalTransitionStyle="flipHorizontal" id="ONe-Ei-ttk"/>
+                        <segue destination="F96-2G-U9r" kind="presentation" identifier="NurseLogin" id="5Ne-ui-nyu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="-198"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="WJn-tf-oDP">
+            <objects>
+                <viewController id="cia-ak-QjV" customClass="LoginVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zB2-OO-Pnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1o-Yl-Nhs" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="230.5" width="300" height="46.5"/>
+                                <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Email"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconIndent">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8J-uX-nr3" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="297" width="300" height="46.5"/>
+                                <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Password"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q0-O4-FC0" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="37" y="363.5" width="300" height="46.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LogIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="LoginAction:" destination="cia-ak-QjV" eventType="touchUpInside" id="qen-tC-IJ9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="care" translatesAutoresizingMaskIntoConstraints="NO" id="wXf-l8-vjk">
+                                <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u8J-uX-nr3" firstAttribute="width" secondItem="zB2-OO-Pnj" secondAttribute="width" multiplier="0.8" id="122-F8-VLo"/>
+                            <constraint firstItem="C8t-FD-RU1" firstAttribute="bottom" secondItem="wXf-l8-vjk" secondAttribute="bottom" id="4qn-RZ-QlW"/>
+                            <constraint firstItem="C8t-FD-RU1" firstAttribute="centerY" secondItem="u8J-uX-nr3" secondAttribute="bottom" id="AZv-VW-f1d"/>
+                            <constraint firstItem="wXf-l8-vjk" firstAttribute="height" secondItem="zB2-OO-Pnj" secondAttribute="height" multiplier="0.2" id="LA2-pr-Zj6"/>
+                            <constraint firstItem="5q0-O4-FC0" firstAttribute="width" secondItem="zB2-OO-Pnj" secondAttribute="width" multiplier="0.8" id="Npj-nd-6cN"/>
+                            <constraint firstItem="5q0-O4-FC0" firstAttribute="top" secondItem="u8J-uX-nr3" secondAttribute="bottom" constant="20" id="OkC-ja-ma5"/>
+                            <constraint firstItem="5q0-O4-FC0" firstAttribute="centerX" secondItem="C8t-FD-RU1" secondAttribute="centerX" id="V73-uD-nAQ"/>
+                            <constraint firstItem="wXf-l8-vjk" firstAttribute="centerX" secondItem="C8t-FD-RU1" secondAttribute="centerX" id="VK5-cb-MR9"/>
+                            <constraint firstItem="wXf-l8-vjk" firstAttribute="width" secondItem="zB2-OO-Pnj" secondAttribute="width" id="eog-KF-n04"/>
+                            <constraint firstItem="u8J-uX-nr3" firstAttribute="top" secondItem="E1o-Yl-Nhs" secondAttribute="bottom" constant="20" id="hBY-Ws-LRz"/>
+                            <constraint firstItem="u8J-uX-nr3" firstAttribute="height" secondItem="zB2-OO-Pnj" secondAttribute="height" multiplier="0.07" id="k7X-iq-bmz"/>
+                            <constraint firstItem="E1o-Yl-Nhs" firstAttribute="centerX" secondItem="C8t-FD-RU1" secondAttribute="centerX" id="pZF-hw-12z"/>
+                            <constraint firstItem="E1o-Yl-Nhs" firstAttribute="height" secondItem="zB2-OO-Pnj" secondAttribute="height" multiplier="0.07" id="qSG-DI-UCK"/>
+                            <constraint firstItem="5q0-O4-FC0" firstAttribute="height" secondItem="zB2-OO-Pnj" secondAttribute="height" multiplier="0.07" id="uRx-3C-CFT"/>
+                            <constraint firstItem="E1o-Yl-Nhs" firstAttribute="width" secondItem="zB2-OO-Pnj" secondAttribute="width" multiplier="0.8" id="w92-8y-qc8"/>
+                            <constraint firstItem="u8J-uX-nr3" firstAttribute="centerX" secondItem="C8t-FD-RU1" secondAttribute="centerX" id="wvy-4w-icc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C8t-FD-RU1"/>
+                    </view>
+                    <connections>
+                        <outlet property="EmailTextField" destination="E1o-Yl-Nhs" id="S2f-Vb-t6S"/>
+                        <outlet property="PasswordTextField" destination="u8J-uX-nr3" id="7cx-5i-vaj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3r-3q-xgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550" y="552"/>
+        </scene>
+        <!--SignupVC-->
+        <scene sceneID="l3O-m2-nfA">
+            <objects>
+                <viewController storyboardIdentifier="Doctor" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U8j-Gz-xK9" customClass="SignupVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9wT-BF-jWc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utR-zU-4eA" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="33.5" height="33.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="utR-zU-4eA" secondAttribute="height" multiplier="1:1" id="uAu-Vl-Ig6"/>
+                                </constraints>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="DismissAction:" destination="U8j-Gz-xK9" eventType="touchUpInside" id="ELs-qQ-fmO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor SignUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8tg-KW-vsS">
+                                <rect key="frame" x="74.5" y="28" width="225" height="46.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="owj-gU-Mto">
+                                <rect key="frame" x="37.5" y="110" width="300" height="467"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-Hz-k2k" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="42"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Person"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAX-6j-tZb" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="47" width="300" height="42.5"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Person"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pawwsord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="522-Xg-DMT" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94.5" width="300" height="42"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Password"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-Type Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-3C-OPc" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="141.5" width="300" height="42.5"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Password"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gU9-s6-NcR" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="189" width="300" height="42"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Email"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9A-cr-dMe" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="236" width="300" height="42"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgi-qb-t15" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="283" width="300" height="42.5"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6qK-86-8Gh" customClass="UnderlinedTextField" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="330.5" width="300" height="42"/>
+                                        <color key="tintColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lA2-95-RLq" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="377.5" width="300" height="42.5"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Upload Image">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="UploadImage:" destination="U8j-Gz-xK9" eventType="touchUpInside" id="u2E-q9-kmW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQh-lj-8hE" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="425" width="300" height="42"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="SignUp">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SignUpAction:" destination="U8j-Gz-xK9" eventType="touchUpInside" id="936-c5-hAd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8tg-KW-vsS" firstAttribute="centerX" secondItem="edH-ey-gk2" secondAttribute="centerX" id="1ho-xi-JIM"/>
+                            <constraint firstItem="owj-gU-Mto" firstAttribute="height" secondItem="9wT-BF-jWc" secondAttribute="height" multiplier="0.7" id="8nH-eA-gcN"/>
+                            <constraint firstItem="8tg-KW-vsS" firstAttribute="height" secondItem="9wT-BF-jWc" secondAttribute="height" multiplier="0.07" id="Dkz-Fl-gxv"/>
+                            <constraint firstItem="utR-zU-4eA" firstAttribute="leading" secondItem="edH-ey-gk2" secondAttribute="leading" constant="16" id="Mxu-sU-fgQ"/>
+                            <constraint firstItem="utR-zU-4eA" firstAttribute="top" secondItem="edH-ey-gk2" secondAttribute="top" id="YzA-Cm-SUN"/>
+                            <constraint firstItem="utR-zU-4eA" firstAttribute="height" secondItem="9wT-BF-jWc" secondAttribute="height" multiplier="0.05" id="gN4-8k-q7O"/>
+                            <constraint firstItem="owj-gU-Mto" firstAttribute="width" secondItem="9wT-BF-jWc" secondAttribute="width" multiplier="0.8" id="h9E-rj-eED"/>
+                            <constraint firstItem="8tg-KW-vsS" firstAttribute="width" secondItem="9wT-BF-jWc" secondAttribute="width" multiplier="0.6" id="kb9-mc-Exz"/>
+                            <constraint firstItem="8tg-KW-vsS" firstAttribute="top" secondItem="edH-ey-gk2" secondAttribute="top" constant="8" id="kc9-y4-bSF"/>
+                            <constraint firstItem="owj-gU-Mto" firstAttribute="centerX" secondItem="edH-ey-gk2" secondAttribute="centerX" id="n1D-ob-HOA"/>
+                            <constraint firstItem="owj-gU-Mto" firstAttribute="centerY" secondItem="edH-ey-gk2" secondAttribute="centerY" id="wZW-fr-FFh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="edH-ey-gk2"/>
+                    </view>
+                    <connections>
+                        <outlet property="Address" destination="6qK-86-8Gh" id="jue-et-6V1"/>
+                        <outlet property="ContactNo" destination="T9A-cr-dMe" id="93x-Q0-vIa"/>
+                        <outlet property="DateOfBirth" destination="jgi-qb-t15" id="bVN-21-j4h"/>
+                        <outlet property="DismissBtn" destination="utR-zU-4eA" id="GRe-8r-sUY"/>
+                        <outlet property="Email" destination="gU9-s6-NcR" id="bSg-zy-Tkh"/>
+                        <outlet property="Password" destination="522-Xg-DMT" id="R2P-Fn-KHx"/>
+                        <outlet property="RePassword" destination="Li8-3C-OPc" id="1Jm-Bi-qze"/>
+                        <outlet property="UserLastName" destination="nAX-6j-tZb" id="Fxd-mU-F0M"/>
+                        <outlet property="UserName" destination="p9A-Hz-k2k" id="Gx4-Qc-Hk9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H61-gV-ode" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="612"/>
+        </scene>
+        <!--Doctor WelcomeVC-->
+        <scene sceneID="UXW-oL-Z5T">
+            <objects>
+                <viewController storyboardIdentifier="DoctorLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Re-sX-O3E" customClass="DoctorWelcomeVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kj1-Zq-5G4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIh-gH-taz">
+                                <rect key="frame" x="108" y="20" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Gf5-eN-cB6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17t-9P-xle" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="581"/>
+        </scene>
+        <!--Nurse WelcomeVC-->
+        <scene sceneID="37r-yR-cq1">
+            <objects>
+                <viewController storyboardIdentifier="NurseLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F96-2G-U9r" customClass="NurseWelcomeVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w6g-yh-k47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Nurse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eO-Fk-0Oe">
+                                <rect key="frame" x="108" y="20" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="qvA-8A-zR5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77G-f7-vqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="603"/>
+        </scene>
+        <!--Patient WelcomeVC-->
+        <scene sceneID="9Rz-Hg-kES">
+            <objects>
+                <viewController storyboardIdentifier="PatientLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0sY-hA-cee" customClass="PatientWelcomeVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FIa-4X-S0D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Patient" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzC-sp-Uor">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="53.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-Mh-Shp" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="46" height="53.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xei-Mh-Shp" secondAttribute="height" multiplier="46:53" id="oJa-sM-S6Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Logout:" destination="0sY-hA-cee" eventType="touchUpInside" id="R5i-v2-xii"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="liV-Ff-HCv">
+                                <rect key="frame" x="103.5" y="73.5" width="167" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="liV-Ff-HCv" secondAttribute="height" multiplier="1:1" id="22O-77-qtD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dja-QZ-Vdv" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="74.5" y="248.5" width="225" height="46.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Patient Survay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="StartQuiz:" destination="0sY-hA-cee" eventType="touchUpInside" id="0Ez-tO-tCu"/>
+                                    <segue destination="ttF-CM-52s" kind="presentation" modalTransitionStyle="flipHorizontal" id="hcX-fx-Ei8"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bvv-QS-Oj1">
+                                <rect key="frame" x="-0.5" y="303" width="375" height="360"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="66" id="L09-Tt-Bfu" customClass="AppointmentTVC" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L09-Tt-Bfu" id="yk7-4S-zjm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ngs-05-8RY">
+                                                    <rect key="frame" x="0.0" y="-1" width="68" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ngs-05-8RY" secondAttribute="height" multiplier="30:29" id="jeB-ps-fa3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uuc-hY-FQo">
+                                                    <rect key="frame" x="68" y="0.0" width="300" height="65.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Appointment Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T6V-qy-9au">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="24.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Doctor Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aIh-9h-dwc">
+                                                            <rect key="frame" x="0.0" y="24.5" width="300" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Timing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bVX-aY-WqJ">
+                                                            <rect key="frame" x="0.0" y="45" width="300" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ngs-05-8RY" firstAttribute="centerY" secondItem="yk7-4S-zjm" secondAttribute="centerY" id="8Nb-BX-ab7"/>
+                                                <constraint firstItem="ngs-05-8RY" firstAttribute="leading" secondItem="yk7-4S-zjm" secondAttribute="leading" id="ITs-LG-Rdq"/>
+                                                <constraint firstItem="ngs-05-8RY" firstAttribute="height" secondItem="yk7-4S-zjm" secondAttribute="height" id="RaF-1i-tMc"/>
+                                                <constraint firstItem="Uuc-hY-FQo" firstAttribute="width" secondItem="yk7-4S-zjm" secondAttribute="width" multiplier="0.8" id="S4u-wk-HTF"/>
+                                                <constraint firstItem="Uuc-hY-FQo" firstAttribute="leading" secondItem="ngs-05-8RY" secondAttribute="trailing" id="VPM-2T-Cik"/>
+                                                <constraint firstItem="Uuc-hY-FQo" firstAttribute="height" secondItem="yk7-4S-zjm" secondAttribute="height" id="cXA-KT-Ddh"/>
+                                                <constraint firstItem="Uuc-hY-FQo" firstAttribute="centerY" secondItem="yk7-4S-zjm" secondAttribute="centerY" id="qF0-vO-i7R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="DoctImage" destination="ngs-05-8RY" id="xIV-t8-4wv"/>
+                                            <outlet property="DoctorName" destination="aIh-9h-dwc" id="1sC-RK-7bC"/>
+                                            <outlet property="Timing" destination="bVX-aY-WqJ" id="mU2-eQ-i5Q"/>
+                                            <outlet property="appointmentDetail" destination="T6V-qy-9au" id="CgS-1M-RHv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JzC-sp-Uor" firstAttribute="width" secondItem="FIa-4X-S0D" secondAttribute="width" id="22f-Yy-oZY"/>
+                            <constraint firstItem="Xei-Mh-Shp" firstAttribute="height" secondItem="FIa-4X-S0D" secondAttribute="height" multiplier="0.08" id="3YI-7R-DWn"/>
+                            <constraint firstItem="Dja-QZ-Vdv" firstAttribute="width" secondItem="FIa-4X-S0D" secondAttribute="width" multiplier="0.6" id="6lj-At-fIS"/>
+                            <constraint firstItem="Dja-QZ-Vdv" firstAttribute="height" secondItem="FIa-4X-S0D" secondAttribute="height" multiplier="0.07" id="8ue-R5-6Vi"/>
+                            <constraint firstItem="Xei-Mh-Shp" firstAttribute="leading" secondItem="6us-kn-C71" secondAttribute="leading" constant="16" id="B1Y-XF-hxU"/>
+                            <constraint firstItem="Dja-QZ-Vdv" firstAttribute="centerX" secondItem="FIa-4X-S0D" secondAttribute="centerX" id="ECk-rk-X81"/>
+                            <constraint firstItem="liV-Ff-HCv" firstAttribute="top" secondItem="JzC-sp-Uor" secondAttribute="bottom" id="FoZ-M1-dLw"/>
+                            <constraint firstItem="Dja-QZ-Vdv" firstAttribute="top" secondItem="liV-Ff-HCv" secondAttribute="bottom" constant="8" id="JQp-5f-qBY"/>
+                            <constraint firstItem="liV-Ff-HCv" firstAttribute="centerX" secondItem="FIa-4X-S0D" secondAttribute="centerX" id="KtV-hO-7rj"/>
+                            <constraint firstItem="Bvv-QS-Oj1" firstAttribute="centerX" secondItem="6us-kn-C71" secondAttribute="centerX" id="OSJ-js-Yhf"/>
+                            <constraint firstItem="Bvv-QS-Oj1" firstAttribute="top" secondItem="Dja-QZ-Vdv" secondAttribute="bottom" constant="8" id="SRX-Z1-Nt6"/>
+                            <constraint firstItem="JzC-sp-Uor" firstAttribute="centerX" secondItem="FIa-4X-S0D" secondAttribute="centerX" id="Uzl-qM-ao6"/>
+                            <constraint firstItem="Bvv-QS-Oj1" firstAttribute="width" secondItem="FIa-4X-S0D" secondAttribute="width" id="Z1o-rw-A2z"/>
+                            <constraint firstItem="Xei-Mh-Shp" firstAttribute="top" secondItem="6us-kn-C71" secondAttribute="top" id="but-6N-A7j"/>
+                            <constraint firstItem="liV-Ff-HCv" firstAttribute="height" secondItem="FIa-4X-S0D" secondAttribute="height" multiplier="0.25" id="ki3-6k-ErP"/>
+                            <constraint firstItem="JzC-sp-Uor" firstAttribute="top" secondItem="6us-kn-C71" secondAttribute="top" id="qU2-DY-EJT"/>
+                            <constraint firstItem="JzC-sp-Uor" firstAttribute="height" secondItem="FIa-4X-S0D" secondAttribute="height" multiplier="0.08" id="roD-SE-U2t"/>
+                            <constraint firstItem="Bvv-QS-Oj1" firstAttribute="height" secondItem="FIa-4X-S0D" secondAttribute="height" multiplier="0.54" id="zvN-ny-bn5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6us-kn-C71"/>
+                    </view>
+                    <connections>
+                        <outlet property="Name" destination="JzC-sp-Uor" id="uVJ-RP-ek2"/>
+                        <outlet property="TableView" destination="Bvv-QS-Oj1" id="AVB-oO-UKH"/>
+                        <outlet property="UserImage" destination="liV-Ff-HCv" id="VOw-ue-4Wy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doi-dH-KWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128.8000000000002" y="541.97901049475263"/>
+        </scene>
+        <!--SurveyVC-->
+        <scene sceneID="Qz9-aj-yqE">
+            <objects>
+                <viewController id="ttF-CM-52s" customClass="SurveyVC" customModule="Hospital_Appointment_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Akt-Ns-oW7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-4N-gCD">
+                                <rect key="frame" x="27" y="187" width="337.5" height="66.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yX-gF-1MW">
+                                <rect key="frame" x="-0.5" y="261.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Answers" id="McS-pg-waM" customClass="QuestionAnswerTVC" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="McS-pg-waM" id="ELE-dS-7yu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbK-7k-mhy">
+                                                    <rect key="frame" x="0.0" y="-0.5" width="44" height="44"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="fbK-7k-mhy" secondAttribute="height" multiplier="1:1" id="Ztk-nf-IOv"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8JU-pp-Q4O">
+                                                    <rect key="frame" x="44" y="-0.5" width="262.5" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8JU-pp-Q4O" firstAttribute="width" secondItem="ELE-dS-7yu" secondAttribute="width" multiplier="0.7" id="2Sk-6j-XaY"/>
+                                                <constraint firstItem="fbK-7k-mhy" firstAttribute="leading" secondItem="ELE-dS-7yu" secondAttribute="leading" id="Fmz-5S-goi"/>
+                                                <constraint firstItem="8JU-pp-Q4O" firstAttribute="height" secondItem="ELE-dS-7yu" secondAttribute="height" id="MTa-ta-NPL"/>
+                                                <constraint firstItem="fbK-7k-mhy" firstAttribute="height" secondItem="ELE-dS-7yu" secondAttribute="height" id="db6-zc-Abs"/>
+                                                <constraint firstItem="8JU-pp-Q4O" firstAttribute="centerY" secondItem="ELE-dS-7yu" secondAttribute="centerY" id="f1d-Ta-vj2"/>
+                                                <constraint firstItem="fbK-7k-mhy" firstAttribute="centerY" secondItem="ELE-dS-7yu" secondAttribute="centerY" id="m08-7M-8AX"/>
+                                                <constraint firstItem="8JU-pp-Q4O" firstAttribute="leading" secondItem="fbK-7k-mhy" secondAttribute="trailing" id="n9u-hU-nzU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AnswerLabel" destination="8JU-pp-Q4O" id="4yy-NH-EQh"/>
+                                            <outlet property="RadioView" destination="fbK-7k-mhy" id="JN9-cK-r4V"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ6-xf-gj4" customClass="CumtomizeButton" customModule="Hospital_Appointment_System" customModuleProvider="target">
+                                <rect key="frame" x="74.5" y="603" width="225" height="46.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NextAction:" destination="ttF-CM-52s" eventType="touchUpInside" id="oT8-MZ-VNk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4N-aR-jhT" customClass="UICircularProgressRingView" customModule="UICircularProgressRing">
+                                <rect key="frame" x="104" y="20" width="167" height="167"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E4N-aR-jhT" secondAttribute="height" multiplier="1:1" id="OH4-nH-VSZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                                        <color key="value" red="0.36078431370000003" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                                        <color key="value" red="0.35838033497755961" green="1" blue="0.56042486110242862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingSpacing">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibRingStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qZ2-4N-gCD" firstAttribute="top" secondItem="E4N-aR-jhT" secondAttribute="bottom" id="3xS-QQ-6py"/>
+                            <constraint firstItem="9yX-gF-1MW" firstAttribute="top" secondItem="qZ2-4N-gCD" secondAttribute="bottom" constant="8" id="404-hS-ry5"/>
+                            <constraint firstItem="qZ2-4N-gCD" firstAttribute="width" secondItem="Akt-Ns-oW7" secondAttribute="width" multiplier="0.9" id="787-4T-Gyy"/>
+                            <constraint firstItem="9yX-gF-1MW" firstAttribute="height" secondItem="Akt-Ns-oW7" secondAttribute="height" multiplier="0.5" id="7hZ-Dl-Fdx"/>
+                            <constraint firstItem="9yX-gF-1MW" firstAttribute="centerX" secondItem="Akt-Ns-oW7" secondAttribute="centerX" id="AYL-pN-ufa"/>
+                            <constraint firstItem="qZ2-4N-gCD" firstAttribute="centerX" secondItem="cFC-Dh-mp7" secondAttribute="centerX" constant="8" id="F9s-a1-1yq"/>
+                            <constraint firstItem="KJ6-xf-gj4" firstAttribute="width" secondItem="Akt-Ns-oW7" secondAttribute="width" multiplier="0.6" id="Jd2-x5-HxB"/>
+                            <constraint firstItem="qZ2-4N-gCD" firstAttribute="height" secondItem="Akt-Ns-oW7" secondAttribute="height" multiplier="0.1" id="K5K-LS-IS9"/>
+                            <constraint firstItem="9yX-gF-1MW" firstAttribute="width" secondItem="Akt-Ns-oW7" secondAttribute="width" id="LRi-uA-BNa"/>
+                            <constraint firstItem="E4N-aR-jhT" firstAttribute="height" secondItem="Akt-Ns-oW7" secondAttribute="height" multiplier="0.25" id="ULq-V9-YCc"/>
+                            <constraint firstItem="KJ6-xf-gj4" firstAttribute="centerX" secondItem="cFC-Dh-mp7" secondAttribute="centerX" id="UhN-VD-a9B"/>
+                            <constraint firstItem="E4N-aR-jhT" firstAttribute="top" secondItem="cFC-Dh-mp7" secondAttribute="top" id="hvX-7x-Ieq"/>
+                            <constraint firstItem="E4N-aR-jhT" firstAttribute="centerX" secondItem="cFC-Dh-mp7" secondAttribute="centerX" id="nW2-0N-Asp"/>
+                            <constraint firstItem="KJ6-xf-gj4" firstAttribute="top" secondItem="9yX-gF-1MW" secondAttribute="bottom" constant="8" id="rRI-BA-54P"/>
+                            <constraint firstItem="KJ6-xf-gj4" firstAttribute="height" secondItem="Akt-Ns-oW7" secondAttribute="height" multiplier="0.07" id="uX3-Ac-Agg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cFC-Dh-mp7"/>
+                    </view>
+                    <connections>
+                        <outlet property="QuestionLable" destination="qZ2-4N-gCD" id="hvP-aB-gEI"/>
+                        <outlet property="ServeyPersentage" destination="E4N-aR-jhT" id="dcV-ux-bbR"/>
+                        <outlet property="tableView" destination="9yX-gF-1MW" id="zo1-RK-WQw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga4-XB-7q7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3498" y="542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Email" width="64" height="64"/>
+        <image name="Password" width="64" height="64"/>
+        <image name="Person" width="24" height="24"/>
+        <image name="care" width="477" height="304"/>
+        <image name="mitchell_cancer_institute" width="1024" height="673"/>
+    </resources>
+</document>
